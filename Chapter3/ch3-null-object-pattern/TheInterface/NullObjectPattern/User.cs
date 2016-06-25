@@ -20,14 +20,6 @@ namespace NullObjectPattern
         public Guid ID { set; get; }
         public string Name { set; get; }
 
-        public bool IsNull
-        {
-            get
-            {
-                return false;
-            }
-        }
-
         public void IncrementSessionTicket()
         {
             sessionExpiry.AddMinutes(30);

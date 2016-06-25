@@ -8,19 +8,11 @@ namespace NullObjectPattern
 {
     public class NullUser : IUser
     {
-        public bool IsNull
-        {
-            get
-            {
-                return true;
-            }
-        }
-
         public string Name
         {
             get
             {
-                return null;
+                return "unknow";
             }
         }
                 

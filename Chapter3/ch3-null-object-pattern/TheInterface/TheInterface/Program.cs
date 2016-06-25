@@ -16,17 +16,7 @@ namespace TheInterface
             var user = userRepository.GetByID(Guid.NewGuid());
             user.IncrementSessionTicket();
 
-            string userName;
-            if(!user.IsNull)
-            {
-                userName = user.Name;
-            }
-            else
-            {
-                userName = "UNKNOW";
-            }
-
-            Console.WriteLine("The user's name is {0}", userName);
+            Console.WriteLine("The user's name is {0}", user.Name);
             Console.ReadKey();
         }
     }
