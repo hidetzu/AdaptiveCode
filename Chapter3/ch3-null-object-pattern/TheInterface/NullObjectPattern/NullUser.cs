@@ -16,6 +16,14 @@ namespace NullObjectPattern
             }
         }
 
+        public string Name
+        {
+            get
+            {
+                return null;
+            }
+        }
+                
         public void IncrementSessionTicket()
         {
             // do nothing

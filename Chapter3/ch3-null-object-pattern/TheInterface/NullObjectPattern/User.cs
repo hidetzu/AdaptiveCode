@@ -18,6 +18,7 @@ namespace NullObjectPattern
         }
 
         public Guid ID { set; get; }
+        public string Name { set; get; }
 
         public bool IsNull
         {

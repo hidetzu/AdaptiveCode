@@ -14,5 +14,7 @@ namespace NullObjectPattern
         {
             get;
         }
+
+        string Name { get; }
     }
 }

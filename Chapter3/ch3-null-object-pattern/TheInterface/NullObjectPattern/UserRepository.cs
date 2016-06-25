@@ -14,10 +14,23 @@ namespace NullObjectPattern
         {
             users = new List<User>
             {
-                new User(Guid.NewGuid()),
-                new User(Guid.NewGuid()),
-                new User(Guid.NewGuid()),
                 new User(Guid.NewGuid())
+                {
+                    Name = "Test1,"
+                },
+                new User(Guid.NewGuid())
+                {
+                    Name = "Test2,"
+                },
+                new User(Guid.NewGuid())
+                {
+                    Name = "Test3,"
+                },
+                new User(Guid.NewGuid())
+                {
+                    Name = "Test4,"
+                },
+
             };
         }
 
