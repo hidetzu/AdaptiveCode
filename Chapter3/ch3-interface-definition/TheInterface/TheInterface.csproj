@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExplicitInterfaceClient.cs" />
+    <Compile Include="ExplicitInterfaceImplementation.cs" />
+    <Compile Include="ImplementingMultipleInterface.cs" />
+    <Compile Include="InterfaceOne.cs" />
+    <Compile Include="InterfaceTwo.cs" />
     <Compile Include="ISimpleInterface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
