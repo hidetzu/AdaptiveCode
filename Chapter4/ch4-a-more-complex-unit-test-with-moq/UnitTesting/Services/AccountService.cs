@@ -29,9 +29,9 @@ namespace Services
                 {
                     account.AddTransaction(transactionAmount);
                 }
-                catch (DomainException)
+                catch (DomainException domainException)
                 {
-                    throw new ServiceException();
+                    throw new ServiceException("An exception was thrown by a domain object", domainException);
                 }
             }
         }
