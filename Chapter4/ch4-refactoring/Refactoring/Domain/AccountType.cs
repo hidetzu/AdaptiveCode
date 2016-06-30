@@ -10,6 +10,7 @@ namespace Domain
         Silver,
         Gold,
         Platinum,
-        Bronze
+        Bronze,
+        Standard
     }
 }
