@@ -10,23 +10,10 @@ namespace Domain.Factories
     {
         public AccountBase CreateAccount(AccountType accountType)
         {
-            AccountBase account = null;
-            switch (accountType)
-            {
-                case AccountType.Gold:
-                    account = new GoldAccount();
-                    break;
-                case AccountType.Silver:
-                    account = new SilverAccount();
-                    break;
-                case AccountType.Platinum:
-                    account = new PlatinumAccount();
-                    break;
-                case AccountType.Bronze:
-                    account = new BronzeAccount();
-                    break;
-            }
-            return account;
+            var objectHandle = Activator.CreateInstance(null,
+                string.Format("{0}Account", accountType.ToString()));
+
+            return (AccountBase)objectHandle.Unwrap();
         }
     }
 }
