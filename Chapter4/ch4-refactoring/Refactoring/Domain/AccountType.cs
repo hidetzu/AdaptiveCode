@@ -9,6 +9,7 @@ namespace Domain
     {
         Silver,
         Gold,
-        Platinum
+        Platinum,
+        Bronze
     }
 }
